@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Intro
+Here is a rough outline of I went about creating this application:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Setting up the project:
+Created a new React project using create-react-app.
+Install required packages such as Redux, Redux Thunk and any other necessary dependencies.
+Enabled TypeScript in the project by adding a tsconfig.json file and converting your JavaScript files to TypeScript files.
 
-## Available Scripts
+# Designing the UI:
+Created a search form component that takes a query input and submit button.
+Created a results component that displays the results of the search query.
+Used a CSS framework (Bootstrap) to simply style the UI.
 
-In the project directory, you can run:
+# Setting up the store:
+Created a Redux store to store the search results and any other state needed for the application.
+Used Redux Thunk to handle async actions, such as making the API call to search for artists, albums, or songs.
 
-### `yarn start`
+# Making the API call:
+In the search form component, created an action that dispatches a thunk action to make the API call when the form is submitted.
+In the thunk action, made the API call using the axios library.
+The results of the API call should be stored in the Redux store.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Displaying the results:
+Used the results stored in the Redux store to render the results in the component component.
+Limited the results to 10 items at a time, and show another 10 items when the user scrolls down (and another and another).
+If there are no results, I display a notification to the user.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Testing:
+Written unit tests for the different components and actions using the @testing-library/react.
+Tested the API call, the store updates, and the component rendering to ensure that everything is working as expected.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Conclusion
+This is a general outline of the steps I took to create this application. It took me 2.5 hours end to end.
