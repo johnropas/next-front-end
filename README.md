@@ -3,11 +3,11 @@ Here is a rough outline of I went about creating this application:
 
 # Setting up the project:
 Created a new React project using create-react-app.
-Install required packages such as Redux, Redux Thunk and any other necessary dependencies.
-Enabled TypeScript in the project by adding a tsconfig.json file and converting your JavaScript files to TypeScript files.
+Installed required packages such as Redux, Redux Thunk and any other necessary dependencies.
+Enabled TypeScript in the project.
 
 # Designing the UI:
-Created a search form component that takes a query input and submit button.
+Created a search form component that takes a query input and a submit button.
 Created a results component that displays the results of the search query.
 Used a CSS framework (Bootstrap) to simply style the UI.
 
